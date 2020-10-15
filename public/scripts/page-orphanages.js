@@ -1,5 +1,5 @@
 // reate map:
-const map = L.map('mapid').setView([-27.222633, -49.6455874], 14);
+const map = L.map('mapid').setView([-27.222633, -49.6455874], 15);
 
 // Create and add tile
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 // Create icon
 const icon = L.icon({
     iconUrl: "./public/images/map-marker.svg",
-    iconSize: [58, 48],
+    iconSize: [58, 68],
     iconAnchor: [29, 68],
     popupAnchor: [170, 2]
 })
