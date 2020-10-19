@@ -86,3 +86,14 @@ function toggleSelect(event) {
     
     input.value = button.dataset.value
 }
+
+function validate(event) {
+
+    // Validar se lat e lng estão preenchidos - DESAFIO
+    const needsLatAndLng = true;
+    if(needsLatAndLng) {
+        event.preventDefault()
+        alert('Selecione um ponto no mapa')
+    }
+
+}

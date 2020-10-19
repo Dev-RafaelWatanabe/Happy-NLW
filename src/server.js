@@ -5,6 +5,7 @@
  // Iniciando o express
  const server = express()
  server
+ .use(express.urlencoded({extended:true}))
  .use(express.static('public'))
 
 // Configurar template engine
@@ -16,6 +17,7 @@
 .get('/orphanage', pages.orphanage)
 .get('/orphanages', pages.orphanages)
 .get('/create-orphanage', pages.createOrphanage)
+.post('/save-orphanage', pages.saveOrphanage)
 
 
 // Ligar o servidor
